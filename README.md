@@ -34,7 +34,7 @@ Inside Backend Folder :
      ```
      const express = require('express');
      const cors = require('cors');
-     Code language: JavaScript (javascript)
+
      ```
      Here, require() is a built-in function to include external modules in your Node.js application using which we are importing the express and cors modules.
      
@@ -45,7 +45,6 @@ Inside Backend Folder :
      app.use(cors());
      app.use(express.json());
      ```
-     Code language: JavaScript (javascript)
      
      The express() function is a top-level function exported by the express module and it can be used to create an Express application.
      We are using cors to allow cross-origin requests. We are using app.use() to add the cors middleware to the Express application.
