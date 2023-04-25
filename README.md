@@ -31,16 +31,20 @@ Inside Backend Folder :
      will be added inorder to start server with the file server.js. (file name can be changed, imp to change in scripts too)
      
      #Server Creation :- 
+     ```
      const express = require('express');
      const cors = require('cors');
      Code language: JavaScript (javascript)
+     ```
      Here, require() is a built-in function to include external modules in your Node.js application using which we are importing the express and cors modules.
      
      
      # Creating Express Application:-
+     ```
      const app = express();
      app.use(cors());
      app.use(express.json());
+     ```
      Code language: JavaScript (javascript)
      
      The express() function is a top-level function exported by the express module and it can be used to create an Express application.
