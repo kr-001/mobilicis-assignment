@@ -22,10 +22,12 @@ Inside Backend Folder :
     -> nodemon – A utility that will monitor for any changes in your source and automatically restart your server if any changes are detected.{optional but necessary to see errors while development}.
     
     #In package.json : 
+    ```
                  "scripts": {
                 "start": "node server.js",
                 "dev": "nodemon server.js"
-                }
+       }
+    ```
      will be added inorder to start server with the file server.js. (file name can be changed, imp to change in scripts too)
      
      #Server Creation :- 
