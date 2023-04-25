@@ -50,6 +50,7 @@ Inside Backend Folder :
      #Next Step : 
      
      #api for data fetch from mongodb: 
+     ```
                app.get("/data", async (req, res) => {
               const objects = await Data.find();
               if(objects.length > 0){
@@ -58,13 +59,14 @@ Inside Backend Folder :
                   res.send([]);
               }
           });
+      ```
           
      #Mentioned criteria data fetch in documentation:-
        {see code for reference inside server.js}.
      
-     
+     ```
      app.listen(5000);
-     
+     ```
      To start the server we will use app.listen() which takes two arguments:
      The port number on which the server will run. In our case, it is 5000.
      A callback function will be called when the server starts which in our case will just log the message that the server is running.
@@ -81,12 +83,14 @@ Inside Backend Folder :
   
   Components Folder consists of React Components which will be further loaded in App.js. It is just like diffent pages of a website.
   The intial data from node server which we fetched in backend server.js folder is fetched in Homepage.js folder with following script:
+  ```
     const [data , setData] = useState([]);
     const getInfo = async () =>{
              let result = await fetch("http://localhost:5000/data");
              result = await result.json();
              setData(result);
           });
+   ```
     Code language: JavaScript (javascript)
     
   Other data according to mentioned queries in fetched in Condition(n).js files , where n = 1,2,3,4,5.
